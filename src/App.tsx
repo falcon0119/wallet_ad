@@ -4,6 +4,8 @@ import "./App.css";
 import Datatable from "./components/data-table";
 import { TableCell } from "@mui/material";
 import Header from "./components/header";
+import Deposit from "./components/Deposit";
+import Input from "./components/input";
 
 function createData(
   name: string,
@@ -47,13 +49,12 @@ function App() {
       </header> */}
 
       <Header />
+      <Input />
+      <Deposit />
       <Datatable
-        name1="hoge"
-        name2="田畑"
-        name3="早くしろ"
         color="white"
         fingers={rows1}
-        names={["timeStamp", "hash", "blockHash", "isError", "from", "to"]}
+        names={["timeStamp", "hash", "blockHash", "isError", "from"]}
       />
     </div>
   );
