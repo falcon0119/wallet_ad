@@ -11,7 +11,7 @@ export default function CustomizedInputBase() {
   return (
     <Paper
       component="form"
-      sx={{ p: "2px 4px", display: "flex", alignItems: "center", width: 400 }}
+      sx={{ p: "2px 4px", display: "flex", alignItems: "center", width: 600 }}
     >
       <IconButton sx={{ p: "10px" }} aria-label="menu">
         <MenuIcon />
@@ -25,9 +25,9 @@ export default function CustomizedInputBase() {
         <SearchIcon />
       </IconButton>
       <Divider sx={{ height: 28, m: 0.5 }} orientation="vertical" />
-      <IconButton color="primary" sx={{ p: "10px" }} aria-label="directions">
+      {/* <IconButton color="primary" sx={{ p: "10px" }} aria-label="directions">
         <DirectionsIcon />
-      </IconButton>
+      </IconButton> */}
     </Paper>
   );
 }
